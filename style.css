@@ -195,6 +195,7 @@ main h2 {
     transform: translateX(20em) translateY(-9em);
     z-index: -4;
     position: absolute;
+    width: 18em;
 }
 .works{
     font-weight: bold;
