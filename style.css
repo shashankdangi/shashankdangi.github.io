@@ -59,10 +59,8 @@ body{
     background-color: var(--background-color);
     font-family: 'Space Grotesk', sans-serif;
     color: white;
-    max-width: 365px;
     height: auto;
     margin: 0 auto;
-    max-width: 37em;
     
 }
 
@@ -117,14 +115,14 @@ nav ul {
     background-repeat: no-repeat;
     z-index: -3;
     position: relative;
-    transform: translateX(-35em) translateY(3em);
+    transform: translateX(-35em) translateY(0em);
 }
 .circle{
-    background: url('./assets/images/pattern-circle.svg');
-    width: 20em;
+    background: url(./assets/images/pattern-circle.svg);
+    width: 6em;
     height: 130px;
-    position: relative;
-    transform: translateX(29em) translateY(-15em);
+    position: absolute;
+    transform: translateX(31em) translateY(-17em);
     background-repeat: no-repeat;
     z-index: -4;
 }
@@ -167,7 +165,7 @@ main h2 {
     line-height: 2.25;
 }
 
-#separator{
+span.separator{
     display:block;
     width: 34em;
     margin: 0 auto;
@@ -354,4 +352,219 @@ main h2 {
 .contact-form textarea:focus{
     outline: none;
     border-bottom: 1px solid #4ee1a0;
+}
+
+/* !---------------------------Desktop CSS------------------------------- */
+
+@media  only screen and (min-width: 980px) {
+    html{
+        font-size: 62.5%;
+    }
+    .wrapper{
+        max-width: 1108px;
+        overflow: unset;
+    }
+    /* -----------------header-------------------- */
+    .logo{
+        margin: 0;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+    nav ul li a img{
+        width: 24px;
+        height: 24px;
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 3em;
+    }
+    header{
+        margin-top: 1em;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .hero-img{
+        background-image: url('./assets/images/photo-desktop.webp');
+        background-repeat: no-repeat;
+        width: 44em;
+        height: 72em;
+        background-position: center center;
+        background-size: contain;
+        margin: 0 auto;
+        z-index: -2;
+        position: absolute;
+        top: 0;
+        transform: translateX(33.4em);
+        
+    }
+    .circle{
+        transform: translateX(59em) translateY(21em);
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    }
+    .rings{
+        width: 60em;
+        height: 13em;
+    }
+
+        /* -----------main-------------- */
+    main{
+        width: 70%;
+        text-align: unset;
+        margin-top: -4%;
+    }
+    main h1{
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: bold;
+        font-size: 8.8rem;
+        line-height: 8.8rem;
+        text-align: left;
+        letter-spacing: -.2rem;
+    }
+
+   main h1 span {
+    padding-bottom:0;
+   }
+
+   main h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+    text-align: left;
+    width: 60%;
+    padding: 3em 0 3em 0;
+
+   }
+   .contact{
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2.6;
+    letter-spacing: .3px;
+    text-align: left;
+    letter-spacing: 2.29px;
+    width: 7.5em;
+    margin: 0 ;
+    margin-bottom: 15em;
+   }
+   
+   span.separator{
+    width:100%;
+   }
+   .skills{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 3em;
+    margin-bottom: 8em;
+   }
+   .skills div p{
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 0;
+   }
+   .skills div h3{
+    font-family: 'Space Grotesk' , sans-serif;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    letter-spacing: -.1rem;
+   }
+   .separator:nth-of-type(2){
+    display: none;
+   }
+   .left{
+    transform: translateX(98em) translateY(22em);
+    width: 22.5%;
+   }
+   /* ======Projects========== */
+   .works{
+    display: flex;
+    align-items: center;
+   }
+   .works h2{
+    font-weight: bold;
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+    letter-spacing: -.2rem;
+   }
+   .works .contact{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 0;
+   }
+   .project{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2,auto);
+    margin-bottom: 7em;
+   }
+   .projects img{
+    width: 50em;
+    height:40em;
+   }
+   .projects .title{
+    font-size: 2.4rem;
+    font-weight: bold;
+   }
+   .projects .source{
+        justify-content: unset;
+        gap: 2em;
+   }
+   .contact-form{
+    margin: 0 auto;
+    background: none;
+   }
+   .bg{
+    background-color: var(--light-dark);
+    width: 100%;
+    height: 55em;
+    position: absolute;
+    z-index: -999;
+    margin-top: -35%;
+   }
+   .contact-form .items{
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+   }
+   .contact-form h1{
+    font-size: 8.8rem;
+    font-weight: bold;
+   }
+   .contact-form h3{
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-left: 0;
+   }
+   .items .nleft{
+    width: 50%;
+    text-align: left;
+   }
+   .items .nright{
+    width: 40%;
+   }
+   .items .nright input[type="text"],
+   .items .nright input[type="email"],
+   .items .nright textarea{
+    padding: 1em;
+   }
+   .items .nright textarea{
+    height: 9em;
+   }
+   .submit{
+    padding-top: 1em;
+
+   }
+   .form{
+    transform: translateX(-104em) translateY(-6em);
+   }
+   .footer{
+    padding: 2em 0 2em 0;
+   }
+   
 }
