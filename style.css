@@ -403,7 +403,7 @@ span.separator{
         transform: translateX(59em) translateY(21em);
     z-index: 0;
     position: absolute;
-    width: 100%;
+    width: 15%;
     }
     .rings{
         width: 60em;
