@@ -10,65 +10,122 @@ closeBtn.addEventListener("click", () => {
   navMenu.classList.remove("active");
 });
 
-fetch("./langs/en.json")
-  .then((res) => res.json())
-  .then((projects) => {
-    const container = document.querySelector(".project-cards");
+function setLanguageClass(lang) {
+  document.documentElement.classList.remove("lang-en", "lang-jp");
+  document.documentElement.classList.add(`lang-${lang}`);
+}
 
-    projects.forEach((project) => {
-      const card = document.createElement("div");
-      card.classList.add("project-card");
+let currentLang = "en";
 
-      card.innerHTML = `
-        <div class="project-img-container">
-          <div class="project-img">
-            <img src="./assets/WebDevelopmentProjects2.jpg" alt="" />
+function loadContent(lang) {
+  fetch(`./langs/${lang}.json`)
+    .then((res) => res.json())
+    .then((data) => {
+      //! Navigation
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.innerHTML = `
+      <li><a href='#'>${data.navigation.about}</a></li>
+      <li><a href='#'>${data.navigation.work}</a></li>
+      <li><a href='#'>${data.navigation.contact}</a></li>
+    `;
+
+      //! Home
+      document.querySelector(".intro-top").innerHTML = data.home.introTop;
+      document.querySelector(".intro-bottom").innerHTML = data.home.introBottom;
+      document.querySelector(".contact-me-text").innerHTML =
+        data.home.contactMe;
+
+      //! About
+      document.getElementById("about-heading").innerText = data.about.heading;
+      document.getElementById("about-desc").innerText = data.about.description;
+      document.getElementById("about-more").innerText = data.about.moreLink;
+
+      //! Projects
+      document.getElementById("projects-intro").innerText =
+        data.projectsIntro.intro;
+      document.getElementById("projects-desc").innerText =
+        data.projectsIntro.desc;
+
+      const projectContainer = document.querySelector(".project-cards");
+      projectContainer.innerHTML = ""; // clear previous
+      data.projects.forEach((project) => {
+        const card = document.createElement("div");
+        card.classList.add("project-card");
+        card.innerHTML = `
+          <div class="project-img-container">
+            <div class="project-img">
+              <img src="${project.image}" alt="${project.title}" />
+            </div>
           </div>
-        </div>
-        <div class="project-about">
-          <div class="project-title">
-            <h1>Blog Website for News</h1>
-            <p>
-              Mastered CSS Grid complexities in building an innovative news
-              homepage, navigating intricate design decisions for a seamless
-              user experience. Leveraged the challenge to enhance skills in
-              front-end development.
-            </p>
-          </div>
-          <div class="project-details">
-            <h1>Project Info</h1>
-
-            <div class="project-info">
-              <hr />
-              <div class="year">
-                <h3>Year</h3>
-                <p>2023</p>
-              </div>
-              <hr />
-              <div class="tech">
-                <h3>Tech</h3>
-                <div class="tech tags">
-                  <p>React</p>
-                  <p>HTML</p>
-                  <p>CSS</p>
-                  <p>API</p>
+          <div class="project-about">
+            <div class="project-title">
+              <h1>${project.title}</h1>
+              <p>${project.description}</p>
+            </div>
+            <div class="project-details">
+              <h1>Project Info</h1>
+              <div class="project-info">
+                <hr />
+                <div class="year">
+                  <h3>Year</h3>
+                  <p>${project.year}</p>
                 </div>
+                <hr />
+                <div class="tech">
+                  <h3>Tech</h3>
+                  <div class="tech tags">
+                    ${project.tech.map((t) => `<p>${t}</p>`).join("")}
+                  </div>
+                </div>
+                <hr />
               </div>
-              <hr />
+            </div>
+            <div class="project-links">
+              <div class="live-link">
+                <a href="${
+                  project.liveLink
+                }">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="github-link">
+                <a href="${
+                  project.githubLink
+                }">See on Github <i class="fa-brands fa-github"></i></a>
+              </div>
             </div>
           </div>
-          <div class="project-links">
-            <div class="live-link">
-              <a href="#">Live Demo <i class="fa-solid fa-arrow-right"></i> </a>
-            </div>
-            <div class="github-link">
-              <a href="#">See on Github <i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      `;
+        `;
+        projectContainer.appendChild(card);
+      });
 
-      container.appendChild(card);
-    });
-  })
-  .catch((err) => console.error("Error Loading Projects: ", err));
+      //! Contact
+      document.getElementById("contact-heading").innerText =
+        data.contact.heading;
+      document.getElementById("contact-email").innerHTML =
+        data.contact.emailText;
+      document.getElementById("contact-resume").innerHTML =
+        data.contact.resumeText;
+    })
+    .catch((err) => console.error(err));
+}
+
+//Update the button text on current Lang
+function updateLangButton() {
+  langToggleBtn.innerText = currentLang.toUpperCase();
+  setLanguageClass(currentLang);
+  document.documentElement.lang = currentLang;
+}
+
+// Language Toggle
+const langToggleBtn = document.querySelector(".lang-toggle");
+langToggleBtn.addEventListener("click", () => {
+  // Toggle the Current Language
+  currentLang = currentLang === "en" ? "jp" : "en";
+
+  //  Update Button Text
+  updateLangButton();
+  loadContent(currentLang);
+});
+
+// Initial Load
+updateLangButton();
+loadContent(currentLang);

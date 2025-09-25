@@ -1,0 +1,46 @@
+{
+  "navigation": {
+    "about": "自己紹介",
+    "work": "実績",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "introTop": "はじめまして、<br>シャシャンクです。",
+    "introBottom": "大阪を拠点に活動するフロントエンド開発者として、アクセシブルでユーザーフレンドリーなWebサイト制作に情熱を注いでいます。",
+    "contactMe": "お問い合わせ"
+  },
+  "about": {
+    "heading": "自己紹介",
+    "description": "大阪を拠点とするフロントエンド開発者として、新たな挑戦の機会を探しています。ソフトウェア開発のバックグラウンドを活かし、開発においてアクセシビリティを重視しています。",
+    "moreLink": "詳しく見る"
+  },
+  "projectsIntro": {
+    "intro": "主な制作実績",
+    "desc": "フロントエンド開発への情熱を表現した、厳選されたプロジェクトをご紹介します。"
+  },
+  "projects": [
+    {
+      "title": "ニュース配信ブログサイト",
+      "description": "革新的なニュースホームページの構築において、CSS Gridの複雑な技術を習得しました...",
+      "year": "2023年",
+      "tech": ["React", "HTML", "CSS", "API"],
+      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "ポートフォリオサイト",
+      "description": "プロジェクトとスキルを紹介するための個人ポートフォリオサイト...",
+      "year": "2024年",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "liveLink": "#",
+      "githubLink": "#"
+    }
+  ],
+  "contact": {
+    "heading": "お問い合わせ",
+    "emailText": "<span>shashankinjapan@gmail.com</span>までご連絡ください。<br>詳細については、<span>履歴書</span>をご覧ください。",
+    "resumeText": "詳細については、<span>履歴書</span>をご覧ください。"
+  }
+}

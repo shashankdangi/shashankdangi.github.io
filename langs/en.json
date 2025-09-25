@@ -1,20 +1,46 @@
-[
-  {
-    "title": "Blog Website for News",
-    "description": "Mastered CSS Grid complexities in building an innovative news homepage...",
-    "year": "2023",
-    "tech": ["React", "HTML", "CSS", "API"],
-    "image": "../assets/WebDevelopmentProjects2.jpg",
-    "liveLink": "#",
-    "githubLink": "#"
+{
+  "navigation": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
   },
-  {
-    "title": "Portfolio Website",
-    "description": "A personal portfolio to showcase projects and skills...",
-    "year": "2024",
-    "tech": ["HTML", "CSS", "JavaScript"],
-    "image": "../assets/WebDevelopmentProjects2.jpg",
-    "liveLink": "#",
-    "githubLink": "#"
+  "home": {
+    "introTop": "Hi, I am <br> Shashank.",
+    "introBottom": "A Osaka based front-end developer passionate about building accessible and user friendly websites.",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "heading": "About Me",
+    "description": "I am a front-end developer based in Osaka looking for exciting opportunities. Has Software Development background. Likes to focus on accessibility when developing.",
+    "moreLink": "More About Me"
+  },
+  "projectsIntro": {
+    "intro": "Featured Projects",
+    "desc": "Here are some of the selected projects that showcase my passion for front-end development."
+  },
+  "projects": [
+    {
+      "title": "Blog Website for News",
+      "description": "Mastered CSS Grid complexities in building an innovative news homepage...",
+      "year": "2023",
+      "tech": ["React", "HTML", "CSS", "API"],
+      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "liveLink": "#",
+      "githubLink": "#"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "A personal portfolio to showcase projects and skills...",
+      "year": "2024",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "liveLink": "#",
+      "githubLink": "#"
+    }
+  ],
+  "contact": {
+    "heading": "Let's Connect",
+    "emailText": "Say hello at <span>shashankinjapan@gmail.com</span> <br> For more info, here's my <span>resume</span>",
+    "resumeText": "For more info, here's my <span>resume</span>"
   }
-]
+}

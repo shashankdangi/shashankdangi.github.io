@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap");
 /* ! Convert Figma Values to CSS */
 html {
   font-size: 62.5%;
@@ -32,6 +31,19 @@ body {
   /* when using margin and padding use em not rem*/
 }
 
+/* ! Japanese Overrides */
+
+html.lang-jp body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html.lang-jp .intro .intro-text .intro-top {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* !------------------- */
 .container {
   margin-top: 5rem;
   margin-bottom: 8rem;
@@ -356,7 +368,7 @@ a::after {
 
 .project-title h1 {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .project-title p {
