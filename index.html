@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
@@ -16,16 +17,21 @@
     <!-- Navigation -->
     <header class="navigation">
       <div class="logo"><span>Shashank</span></div>
-      <button class="nav-toggle" aria-label="Open navigation" id="nav-btn">
-        <i class="fa-solid fa-bars" id="nav-icon"></i>
-      </button>
+      <div class="mobile-nav">
+        <button class="lang-toggle">En</button>
+        <button class="nav-toggle" aria-label="Open navigation" id="nav-btn">
+          <i class="fa-solid fa-bars" id="nav-icon"></i>
+        </button>
+      </div>
       <nav class="links">
+        <button class="close-btn" aria-label="Close navigation">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Work</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <button class="lang-btn">En</button>
       </nav>
     </header>
 
@@ -47,26 +53,87 @@
           </div>
         </div>
         <div class="intro-links">
-          <span>Contact me</span>
-          <span>In</span>
-          <span>Gt</span>
+          <div class="contact-me">
+            <span class="contact">contact me</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="linkedIn"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="Github"><i class="fa-brands fa-github"></i></div>
         </div>
       </div>
       <div class="intro-img" id="intro-img">
         <img src="assets/main_mobile.webp" alt="photo of me" />
       </div>
     </section>
+
+    <!-- Main End -->
     <hr />
+    <!-- About -->
     <section class="container" id="About">
-      <h1>About</h1>
+      <div class="about">
+        <h1>About Me</h1>
+        <p>
+          I am a front-end developer based in Osaka looking for exciting
+          opportunities. Has Software Development background. Likes to focus on
+          accessibility when developing.
+        </p>
+        <div><a href="#">More About Me</a></div>
+      </div>
+      <div class="about-image">
+        <img src="./assets/about_mobile.webp" alt="about-me" />
+      </div>
     </section>
+    <!-- About End -->
     <hr />
+    <!-- Projects -->
     <section class="container" id="Projects">
-      <h1>Projects</h1>
+      <div class="projects">
+        <h1>Featured Projects</h1>
+        <p>
+          Here are some of the selected projects that showcase my passion for
+          front-end development.
+        </p>
+      </div>
+
+      <div class="project-cards">
+        <!-- Javascript Injection -->
+      </div>
     </section>
+    <!-- Project End -->
     <hr />
+    <!-- Contact -->
     <footer class="container" id="Contact">
-      <h1>Contact</h1>
+      <div class="contact-details">
+        <div class="details-top">
+          <h1>Let's Connect</h1>
+          <p>
+            Say hello at <span>shashankinjapan@gmail.com</span><br />
+            For more info, here's my <span>resume</span>
+          </p>
+          <div class="contact-links">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <label for="Name">Name</label>
+        <input type="text" name="" id="" required /> <br />
+        <label for="Email">Email</label>
+        <input type="email" name="" id="" required /> <br />
+        <label for="Subject">Subject</label>
+        <input type="text" name="" id="" required /> <br />
+        <label for="Message">Message</label>
+        <textarea name="" id=""></textarea>
+        <button class="submit-btn">Submit</button>
+      </div>
     </footer>
+    <!-- Contact End -->
+    <div class="footer">
+      <p>&copy; 2025 Shashank Dangi</p>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
