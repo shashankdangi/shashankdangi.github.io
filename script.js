@@ -36,7 +36,7 @@ function loadContent(lang) {
         const navLinks = document.querySelector(".nav-links");
 
         navLinks.innerHTML = `
-      <li><a href='about.html'>${data.homePage.navigation.about}</a></li>
+      <li><a href='About.html'>${data.homePage.navigation.about}</a></li>
       <li><a href='#Work-Page'>${data.homePage.navigation.work}</a></li>
       <li><a href='#Contact-Page'>${data.homePage.navigation.contact}</a></li>
     `;
