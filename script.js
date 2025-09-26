@@ -17,6 +17,8 @@ function setLanguageClass(lang) {
 
 let currentLang = "en";
 
+let sendMail = document.getElementById("Submit-btn");
+
 function loadContent(lang) {
   fetch(`./langs/${lang}.json`)
     .then((res) => res.json())
@@ -117,9 +119,10 @@ function loadContent(lang) {
       document.getElementById("Email-label").innerText = data.contact.email;
       document.getElementById("Subject-label").innerText = data.contact.subject;
       document.getElementById("Message-label").innerText = data.contact.message;
-      document.getElementById("Submit-btn").innerText = data.contact.submit;
-    })
 
+      // Fixed: Just set the button text, don't create nested anchor
+      sendMail.innerText = data.contact.submit;
+    })
     .catch((err) => console.error(err));
 }
 
@@ -129,6 +132,40 @@ function updateLangButton() {
   setLanguageClass(currentLang);
   document.documentElement.lang = currentLang;
 }
+
+//Reset the form after button is pressed
+function resetForm() {
+  document.getElementById("Name").value = "";
+  document.getElementById("Email").value = "";
+  document.getElementById("Subject").value = "";
+  document.getElementById("Message").value = "";
+}
+
+// Contact Form Submit - Fixed Implementation
+
+sendMail.addEventListener("click", () => {
+  const name = document.getElementById("Name").value;
+  const email = document.getElementById("Email").value;
+  const subject = document.getElementById("Subject").value;
+  const message = document.getElementById("Message").value;
+
+  // Validate form fields
+  if (!name || !email || !subject || !message) {
+    alert("Please fill in all fields");
+    return;
+  }
+
+  // Construct mailto Link
+  const mailtoLink = `mailto:shashankinjapan@gmail.com?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  )}`;
+
+  // Open mailto link
+  sendMail.href = mailtoLink;
+  resetForm();
+});
 
 // Language Toggle
 const langToggleBtn = document.querySelector(".lang-toggle");

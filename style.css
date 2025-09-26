@@ -530,6 +530,17 @@ a::after {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  color: var(--bg-color);
+}
+
+.submit-btn {
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn::after {
+  content: none;
 }
 
 .submit-btn:active {

@@ -24,7 +24,7 @@
       "description": "Mastered CSS Grid complexities in building an innovative news homepage...",
       "year": "2023",
       "tech": ["React", "HTML", "CSS", "API"],
-      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "image": "../assets/main_about.webp",
       "liveLink": "#",
       "githubLink": "#"
     },
@@ -33,7 +33,7 @@
       "description": "A personal portfolio to showcase projects and skills...",
       "year": "2024",
       "tech": ["HTML", "CSS", "JavaScript"],
-      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "image": "../assets/main_about.webp",
       "liveLink": "#",
       "githubLink": "#"
     }
