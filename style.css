@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Noto+Sans+JP:wght@100..900&display=swap");
 /* ! Convert Figma Values to CSS */
 html {
   font-size: 62.5%;
@@ -32,6 +31,19 @@ body {
   /* when using margin and padding use em not rem*/
 }
 
+/* ! Japanese Overrides */
+
+html.lang-jp body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+html.lang-jp .intro .intro-text .intro-top {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* !------------------- */
 .container {
   margin-top: 5rem;
   margin-bottom: 8rem;
@@ -149,7 +161,9 @@ body {
   transform: rotate(0deg);
   transition: 0.1s ease-in-out;
 }
-
+.intro-links a::after {
+  content: none;
+}
 .contact-me:active {
   box-shadow: 0 4px 20px #d3e97a;
   transform: scale(0.95);
@@ -356,7 +370,7 @@ a::after {
 
 .project-title h1 {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .project-title p {
@@ -381,7 +395,9 @@ a::after {
   display: flex;
   justify-content: space-between;
   margin: 0.5rem;
+  align-items: center;
 }
+
 .year h3,
 .tech h3 {
   font-size: 16px;
@@ -400,7 +416,10 @@ a::after {
 
 .tech .tags {
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .project-links {
   display: flex;
   gap: 2rem;
@@ -462,11 +481,15 @@ a::after {
   margin-top: 1em;
 }
 
+.contact-links i {
+  color: var(--link-color);
+}
+
 .contact-links a::after {
   content: none;
 }
 
-/* Contact Form */
+/*! Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -512,6 +535,17 @@ a::after {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  color: var(--bg-color);
+}
+
+.submit-btn {
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit-btn::after {
+  content: none;
 }
 
 .submit-btn:active {
@@ -522,6 +556,11 @@ a::after {
 .footer {
   font-size: 14px;
   color: var(--primary-sub);
+}
+
+.contact-details a {
+  color: var(--primary-text);
+  text-transform: none;
 }
 /* ! Tablet View */
 @media (min-width: 601px) and (max-width: 1024px) {

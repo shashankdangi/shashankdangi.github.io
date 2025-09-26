@@ -1,0 +1,89 @@
+{
+  "template": {
+    "project-template": {
+      "title": "",
+      "description": "",
+      "year": "",
+      "tech": ["", "", "", ""],
+      "image": "",
+      "liveLink": "#",
+      "githubLink": "#"
+    }
+  },
+  "navigation": {
+    "about": "私のこと",
+    "work": "実績",
+    "contact": "連絡先"
+  },
+  "home": {
+    "introTop": "こんにちは、<br> シャシャンクです。",
+    "introBottom": "大阪を拠点に活動するフロントエンド開発者です。アクセシビリティと使いやすさを追求したウェブサイト制作に情熱を注いでいます。",
+    "contactMe": "お問い合わせ"
+  },
+  "about": {
+    "heading": "私のこと",
+    "description": "2002年12月生まれ、インド出身です。インドでソフトウェア開発を学んだ後、現在は日本の大阪に住んでいます。日本語能力試験JLPT N2を取得しており、特にフロントエンド開発の分野で新たな機会を探しています。",
+    "moreLink": "もっと見る"
+  },
+  "projectsIntro": {
+    "intro": "主なプロジェクト",
+    "desc": "フロントエンド開発への私の情熱を示す、選りすぐりのプロジェクトをご紹介します。"
+  },
+  "projects": [
+    {
+      "title": "ゲーム情報",
+      "description": "RawgAPIを利用して最新のゲームや人気ゲームの情報を検索できます。タイトル、ジャンル、リリース日、評価などを一覧で表示し、ユーザーが気になるゲームを簡単に探せるようにしました。またUIにはダークモードとライトモードも搭載しています。",
+      "year": "2023",
+      "tech": ["React", "TypeScript", "ChakraUI", "API"],
+      "image": "../assets/Rawg.webp",
+      "liveLink": "https://game-hub-nu-vert.vercel.app/",
+      "githubLink": "https://github.com/shashankdangi/Rawg-Clone"
+    },
+    {
+      "title": "漢字辞書",
+      "description": "漢字APIを利用して、漢字を検索すると英語の意味、関連する単語、書き順を表示します。さらに、ダークモードとライトモードを切り替えることができます。",
+      "year": "2024",
+      "tech": ["Next.js", "TailwindCSS", "TypeScript", "ShadCn", "API"],
+      "image": "../assets/KanjiDis.webp",
+      "liveLink": "https://kanji-search.vercel.app/",
+      "githubLink": "https://github.com/shashankdangi/KanjiSearch"
+    },
+    {
+      "title": "QRコード",
+      "description": "テキストやURLを入力してQRコードを作成できます。",
+      "year": "2023",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "image": "../assets/QRCode.webp",
+      "liveLink": "https://shashankdangi.github.io/QR-CodeGenerator/",
+      "githubLink": "https://github.com/shashankdangi/QR-CodeGenerator"
+    },
+    {
+      "title": "PigGame",
+      "description": "2人でプレイでき、順番にサイコロを振って得点を競います。1が出るとターンの得点がリセットされるため、どこで止めるかの判断がポイントになります。JavaScriptを使って実装しました。",
+      "year": "2023",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "image": "../assets/PigGame.webp",
+      "liveLink": "https://shashankdangi.github.io/PigGame/",
+      "githubLink": "https://github.com/shashankdangi/PigGame"
+    },
+    {
+      "title": "数字当てゲーム",
+      "description": "ランダムに選ばれた数字をプレイヤーが推測し、入力した数値が大きいか小さいかのヒントが表示されます。正解するとスコアが表示され、最高記録を更新することもできます。JavaScriptで実装しました。",
+      "year": "2024",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "image": "../assets/NumberGuess.webp",
+      "liveLink": "https://shashankdangi.github.io/GuessMyNumber/",
+      "githubLink": "https://github.com/shashankdangi/GuessMyNumber"
+    }
+  ],
+  "contact": {
+    "heading": "お問い合わせ",
+    "emailText": "メールはこちら：<a href='mailto:shashankinjapan@gmail.com?subject=こんにちは、あなたのポートフォリオを拝見しました '>shashankinjapan@gmail.com</a>",
+    "resumeText": "詳細は <a href='../assets/履歴書.pdf'>履歴書</a> をご覧ください。",
+    "name": "お名前",
+    "email": "メール",
+    "subject": "件名",
+    "message": "メッセージ",
+    "submit": "送信"
+  }
+}
