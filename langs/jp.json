@@ -98,20 +98,36 @@
       "title": "自己紹介",
       "heading": "大阪在住のフロントエンドエンジニアです。ソフトウェア開発のバックグラウンドがあります。",
       "desc": "2002年12月生まれ、インド出身です。インドでソフトウェア開発を学んだ後、現在は日本の大阪に住んでいます。日本語能力試験JLPT N2を取得しており、特にフロントエンド開発の分野で新たな機会を探しています。開発においてはアクセシビリティを重視し、問題解決に情熱を持ち、常に好奇心旺盛です。現在はReact.js、Next.js、そしてデザインにも少し取り組んでいます。プログラミング以外の時間は音楽を聴いたり、アニメを見たりすることを楽しんでおり、スキル向上のため日々学習を続けています。",
-      "downloadBtn": "履歴書をダウンロード"
+      "downloadBtn": "<a href='../assets/履歴書.pdf'>履歴書をダウンロード</a>"
     },
     "skill": {
       "title": "私のスキル",
       "desc": "常に新しいスキルを習得し、挑戦を続けています。以下は現在持っているスキルの一部です。",
       "skills": [
-        "HTML",
-        "CSS",
+        "Html",
+        "css",
         "JavaScript",
         "TypeScript",
-        "Figma",
-        "React",
-        "Next.js",
-        "PowerPoint"
+        "figma",
+        "react",
+        "next.js",
+        "PowerPoint",
+        "windows",
+        "MySql",
+        "java",
+        "python",
+        "vscode",
+        "github",
+        "git",
+        "word",
+        "excel",
+        "powerpoint",
+        "photoshop",
+        "canva",
+        "wordpress",
+        "shadcn",
+        "bootstrap",
+        "materialUI"
       ]
     },
     "education": {
@@ -121,17 +137,17 @@
           "title": "日本語学習",
           "time": "2024年4月 - 2025年9月",
           "institute": "ヒューマンアカデミー日本語学校（大阪）",
-          "desc": "大阪中心部で1年半日本語を学び、JLPT N2を取得しました。"
+          "desc": "大阪中心部で1年半日本語を学び、<span class='highlight'>JLPT N2</span>を取得しました。"
         },
         {
           "title": "B.Voc ソフトウェア開発",
-          "time": "2023年11月 - 在学中",
+          "time": "2020年11月 - 2023年8月",
           "institute": "デリー大学",
-          "desc": "デリー大学でB.Vocソフトウェア開発を専攻し、86％の成績を収めました。"
+          "desc": "デリー大学でB.Vocソフトウェア開発を専攻し、<span class='highlight'>86％</span>の成績を収めました。"
         },
         {
           "title": "高等学校卒業（Class XII）",
-          "time": "2021年4月 - 2022年3月",
+          "time": "2019年4月 - 2020年3月",
           "institute": "KCMワールドスクール",
           "desc": "理系科目を中心に高等学校を修了しました。"
         }

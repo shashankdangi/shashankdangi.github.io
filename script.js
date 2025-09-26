@@ -15,7 +15,9 @@ function setLanguageClass(lang) {
   document.documentElement.classList.add(`lang-${lang}`);
 }
 
+//!=========================== default lang ========================================
 let currentLang = "en";
+//!=================================================================================
 
 let sendMail = document.getElementById("Submit-btn");
 
@@ -34,7 +36,7 @@ function loadContent(lang) {
         const navLinks = document.querySelector(".nav-links");
 
         navLinks.innerHTML = `
-      <li><a href='#About-Page'>${data.homePage.navigation.about}</a></li>
+      <li><a href='about.html'>${data.homePage.navigation.about}</a></li>
       <li><a href='#Work-Page'>${data.homePage.navigation.work}</a></li>
       <li><a href='#Contact-Page'>${data.homePage.navigation.contact}</a></li>
     `;
@@ -166,7 +168,7 @@ function loadContent(lang) {
         data.aboutPage.main.heading;
       document.getElementById("about-description").innerText =
         data.aboutPage.main.desc;
-      document.getElementById("download-resume").innerText =
+      document.getElementById("download-resume").innerHTML =
         data.aboutPage.main.downloadBtn;
 
       //?========================Skills==================

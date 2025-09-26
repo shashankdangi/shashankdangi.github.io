@@ -629,6 +629,10 @@ a::after {
   padding: 4px 5px 4px 16px;
 }
 
+.download-resume a {
+  color: var(--bg-color);
+}
+
 .download-resume i {
   width: 40px;
   height: 40px;
@@ -690,6 +694,11 @@ a::after {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+}
+
+.highlight {
+  color: var(--primary-text);
+  font-weight: bold;
 }
 
 .education-title h1 {

@@ -88,7 +88,7 @@
       "title": "about me",
       "heading": "I am a front-end developer based in Osaka. Has Software Development Background.",
       "desc": "I am a front-end developer based in Osaka looking for exciting opportunities. Has Software Development Background. Likes to focus on accessibility when developing. Passionate and Curious about solving problems. Currently, I'm exploring Reactjs, Nextjs and a bit of designing. While I am not programming . I enjoy listening to music or watching anime . Learning more to improve my skills.",
-      "downloadBtn": "Download resume"
+      "downloadBtn": "<a href='../assets/Resume.pdf'>Download resume</a>"
     },
     "skill": {
       "title": "my capabilities",
@@ -101,7 +101,23 @@
         "figma",
         "react",
         "next.js",
-        "PowerPoint"
+        "PowerPoint",
+        "windows",
+        "MySql",
+        "java",
+        "python",
+        "vscode",
+        "github",
+        "git",
+        "word",
+        "excel",
+        "powerpoint",
+        "photoshop",
+        "canva",
+        "wordpress",
+        "shadcn",
+        "bootstrap",
+        "materialUI"
       ]
     },
     "education": {
@@ -111,19 +127,19 @@
           "title": "Japanese Language Studies",
           "time": "Apr 2024 - Sep 2025",
           "institute": "Human Academy Japanese Language School ",
-          "desc": "Studied Japanese for a Year and Half at Center of Osaka and obtained JLPT N2"
+          "desc": "Studied Japanese for a Year and Half at Central Osaka and obtained <span class='highlight'>JLPT N2</span>"
         },
         {
           "title": "b.vov software development",
-          "time": "nov 2023 - Present",
+          "time": "Nov 2020 - Aug 2023",
           "institute": "Delhi University",
-          "desc": "Studied B.Voc Software developemnt at delhi univeristy and score 86%"
+          "desc": "Studied B.Voc Software development at Ramanujan College , Delhi University and score <span class='highlight'>86%</span>"
         },
         {
           "title": "class xii",
-          "time": "nov 2023 - Present",
+          "time": "Apr 2019 - Mar 2020",
           "institute": "kcm world school",
-          "desc": "Studied B.Voc Software developemnt at delhi univeristy and score 86%"
+          "desc": "Graduated High School from Palwal Haryana India with distinction"
         }
       ]
     }
