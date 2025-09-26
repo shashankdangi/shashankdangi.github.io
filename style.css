@@ -258,7 +258,7 @@ img {
 }
 
 .intro .intro-text .intro-bottom {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--primary-sub);
 }
 
@@ -285,7 +285,7 @@ hr {
 .about {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .about h1 {
@@ -294,7 +294,7 @@ hr {
 }
 
 .about a {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 a {
