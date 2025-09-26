@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shashank | Portfolio</title>
-
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
     <!--! Icons CDN  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
   </head>
-  <body class="home">
+  <body class="about-page">
     <!--! Navigation -->
     <header class="navigation">
-      <div class="logo"><span>Shashank</span></div>
+      <div class="logo">
+        <span class="about-page-logo"><a href="index.html">Shashank</a></span>
+      </div>
       <div class="mobile-nav">
         <button class="lang-toggle"></button>
         <button class="nav-toggle" aria-label="Open navigation" id="nav-btn">
@@ -27,70 +27,75 @@
         <button class="close-btn" aria-label="Close navigation">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <ul class="nav-links">
+        <ul class="about-nav-links">
           <!-- Injected through JavaScript -->
         </ul>
       </nav>
     </header>
-
-    <!-- !Main Home -->
-    <section class="container" id="Home">
-      <div class="intro">
-        <div class="intro-text">
-          <div class="intro-top"></div>
-          <div class="intro-bottom"></div>
-        </div>
-        <div class="intro-links">
-          <a class="contact-me" href="#Contact-Page">
-            <span class="contact-me-text"></span>
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <div class="linkedIn">
-            <a href="https://www.linkedin.com/in/shashank-dangi/"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
+    <!--! About Main  -->
+    <div class="container" id="AboutPage">
+      <div class="about-container">
+        <div class="title"><h1 id="title"></h1></div>
+        <div class="about-info">
+          <div class="about-heading">
+            <p id="about-heading"></p>
           </div>
-          <div class="Github">
-            <a href="https://github.com/shashankdangi"
-              ><i class="fa-brands fa-github"></i
+          <div class="about-description">
+            <p id="about-description"></p>
+          </div>
+          <div class="about-links">
+            <a href="#" class="download-resume"
+              ><span id="download-resume"></span>
+              <i class="fa-solid fa-download"></i
             ></a>
+            <div class="linkedIn">
+              <a href="https://www.linkedin.com/in/shashank-dangi/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="Github">
+              <a href="https://github.com/shashankdangi"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="intro-img" id="intro-img">
-        <img src="assets/main_mobile.webp" alt="photo of me" />
+      <div class="about-hero-img">
+        <img src="./assets/main_about.webp" alt="#" />
+      </div>
+    </div>
+    <!--! About End  -->
+    <hr id="Skills-Page" />
+    <!--! Skills  -->
+    <section id="Skills" class="container">
+      <div class="skills-title">
+        <h1 id="skills-title"></h1>
+      </div>
+      <div class="skills-info">
+        <div class="skills-desc">
+          <p id="skills-desc"></p>
+        </div>
+        <div class="skills-tags" id="skills-tags">
+          <!-- Js Inject -->
+        </div>
       </div>
     </section>
+    <!--! Skills End  -->
 
-    <!--! Main End -->
-    <hr id="About-Page" />
-    <!--! About -->
-    <section class="container" id="About">
-      <div class="about">
-        <h1 id="about-heading"></h1>
-        <p id="about-desc"></p>
-        <div><a href="About.html" id="about-more"></a></div>
+    <hr id="Education-Page" />
+    <!--! Education  -->
+    <section id="Education" class="container">
+      <div class="education-title">
+        <h1 id="education-title">My Education</h1>
       </div>
-      <div class="about-image">
-        <img src="./assets/about_mobile.webp" alt="about-me" />
+      <div class="education-cards">
+        <!-- JS Inject -->
       </div>
     </section>
-    <!--! About End -->
-    <hr id="Work-Page" />
-    <!--! Projects -->
-    <section class="container" id="Projects">
-      <div class="projects">
-        <h1 id="projects-intro"></h1>
-        <p id="projects-desc"></p>
-      </div>
-
-      <div class="project-cards">
-        <!--* Javascript Injection -->
-      </div>
-    </section>
-    <!--! Project End -->
+    <!--! Education End  -->
     <hr id="Contact-Page" />
-    <!--! Contact -->
+    <!--! Contacts Page  -->
     <div class="container" id="Contact">
       <div class="contact-details">
         <div class="details-top">
@@ -129,6 +134,8 @@
     <div class="footer">
       <p>&copy; 2025 Shashank Dangi</p>
     </div>
+
+    <!--! JavaScript  -->
     <script src="script.js"></script>
   </body>
 </html>
