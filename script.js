@@ -24,10 +24,18 @@ function loadContent(lang) {
       //! Navigation
       const navLinks = document.querySelector(".nav-links");
       navLinks.innerHTML = `
-      <li><a href='#'>${data.navigation.about}</a></li>
-      <li><a href='#'>${data.navigation.work}</a></li>
-      <li><a href='#'>${data.navigation.contact}</a></li>
+      <li><a href='#About-Page'>${data.navigation.about}</a></li>
+      <li><a href='#Work-Page'>${data.navigation.work}</a></li>
+      <li><a href='#Contact-Page'>${data.navigation.contact}</a></li>
     `;
+
+      // * Closes the nav when section is reached
+      const links = navLinks.querySelectorAll("a");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active"); // assumes navMenu is defined
+        });
+      });
 
       //! Home
       document.querySelector(".intro-top").innerHTML = data.home.introTop;
