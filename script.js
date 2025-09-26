@@ -102,9 +102,14 @@ function loadContent(lang) {
         data.contact.heading;
       document.getElementById("contact-email").innerHTML =
         data.contact.emailText;
-      document.getElementById("contact-resume").innerHTML =
-        data.contact.resumeText;
+
+      document.getElementById("Name-label").innerHTML = data.contact.name;
+      document.getElementById("Email-label").innerText = data.contact.email;
+      document.getElementById("Subject-label").innerText = data.contact.subject;
+      document.getElementById("Message-label").innerText = data.contact.message;
+      document.getElementById("Submit-btn").innerText = data.contact.submit;
     })
+
     .catch((err) => console.error(err));
 }
 

@@ -1,27 +1,27 @@
 {
   "navigation": {
-    "about": "自己紹介",
+    "about": "私のこと",
     "work": "実績",
-    "contact": "お問い合わせ"
+    "contact": "連絡先"
   },
   "home": {
-    "introTop": "はじめまして、<br>シャシャンクです。",
-    "introBottom": "大阪を拠点に活動するフロントエンド開発者として、アクセシブルでユーザーフレンドリーなWebサイト制作に情熱を注いでいます。",
+    "introTop": "こんにちは、<br> シャシャンクです。",
+    "introBottom": "大阪を拠点に活動するフロントエンド開発者です。アクセシビリティと使いやすさを追求したウェブサイト制作に情熱を注いでいます。",
     "contactMe": "お問い合わせ"
   },
   "about": {
-    "heading": "自己紹介",
-    "description": "大阪を拠点とするフロントエンド開発者として、新たな挑戦の機会を探しています。ソフトウェア開発のバックグラウンドを活かし、開発においてアクセシビリティを重視しています。",
-    "moreLink": "詳しく見る"
+    "heading": "私のこと",
+    "description": "2002年12月生まれ、インド出身です。インドでソフトウェア開発を学んだ後、現在は日本の大阪に住んでいます。日本語能力試験JLPT N2を取得しており、特にフロントエンド開発の分野で新たな機会を探しています。",
+    "moreLink": "もっと見る"
   },
   "projectsIntro": {
-    "intro": "主な制作実績",
-    "desc": "フロントエンド開発への情熱を表現した、厳選されたプロジェクトをご紹介します。"
+    "intro": "主なプロジェクト",
+    "desc": "フロントエンド開発への私の情熱を示す、選りすぐりのプロジェクトをご紹介します。"
   },
   "projects": [
     {
-      "title": "ニュース配信ブログサイト",
-      "description": "革新的なニュースホームページの構築において、CSS Gridの複雑な技術を習得しました...",
+      "title": "ニュースブログウェブサイト",
+      "description": "革新的なニュースホームページを構築する中で、CSS Gridの複雑な技術を習得しました。",
       "year": "2023年",
       "tech": ["React", "HTML", "CSS", "API"],
       "image": "./assets/WebDevelopmentProjects2.jpg",
@@ -29,8 +29,8 @@
       "githubLink": "#"
     },
     {
-      "title": "ポートフォリオサイト",
-      "description": "プロジェクトとスキルを紹介するための個人ポートフォリオサイト...",
+      "title": "ポートフォリオウェブサイト",
+      "description": "自身のプロジェクトとスキルを紹介するための個人ポートフォリオです。",
       "year": "2024年",
       "tech": ["HTML", "CSS", "JavaScript"],
       "image": "./assets/WebDevelopmentProjects2.jpg",
@@ -40,7 +40,11 @@
   ],
   "contact": {
     "heading": "お問い合わせ",
-    "emailText": "<span>shashankinjapan@gmail.com</span>までご連絡ください。<br>詳細については、<span>履歴書</span>をご覧ください。",
-    "resumeText": "詳細については、<span>履歴書</span>をご覧ください。"
+    "emailText": "メールはこちら：<span>shashankinjapan@gmail.com</span><br>詳細は <span>履歴書</span> をご覧ください。",
+    "name": "お名前",
+    "email": "メール",
+    "subject": "件名",
+    "message": "メッセージ",
+    "submit": "送信"
   }
 }

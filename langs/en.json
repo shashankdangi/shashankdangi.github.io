@@ -41,6 +41,10 @@
   "contact": {
     "heading": "Let's Connect",
     "emailText": "Say hello at <span>shashankinjapan@gmail.com</span> <br> For more info, here's my <span>resume</span>",
-    "resumeText": "For more info, here's my <span>resume</span>"
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Submit"
   }
 }
