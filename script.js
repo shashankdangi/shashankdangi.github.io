@@ -84,7 +84,9 @@ function loadContent(lang) {
                 <div class="tech">
                   <h3>Tech</h3>
                   <div class="tech tags">
-                    ${project.tech.map((t) => `<p>${t}</p>`).join("")}
+                    ${project.tech
+                      .map((t) => `<p class="tech-tags">${t}</p>`)
+                      .join(",")}
                   </div>
                 </div>
                 <hr />
