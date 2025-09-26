@@ -161,7 +161,9 @@ html.lang-jp .intro .intro-text .intro-top {
   transform: rotate(0deg);
   transition: 0.1s ease-in-out;
 }
-
+.intro-links a::after {
+  content: none;
+}
 .contact-me:active {
   box-shadow: 0 4px 20px #d3e97a;
   transform: scale(0.95);
@@ -474,11 +476,15 @@ a::after {
   margin-top: 1em;
 }
 
+.contact-links i {
+  color: var(--link-color);
+}
+
 .contact-links a::after {
   content: none;
 }
 
-/* Contact Form */
+/*! Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -534,6 +540,11 @@ a::after {
 .footer {
   font-size: 14px;
   color: var(--primary-sub);
+}
+
+.contact-details a {
+  color: var(--primary-text);
+  text-transform: none;
 }
 /* ! Tablet View */
 @media (min-width: 601px) and (max-width: 1024px) {

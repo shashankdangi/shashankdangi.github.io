@@ -102,6 +102,8 @@ function loadContent(lang) {
         data.contact.heading;
       document.getElementById("contact-email").innerHTML =
         data.contact.emailText;
+      document.getElementById("contact-resume").innerHTML =
+        data.contact.resumeText;
 
       document.getElementById("Name-label").innerHTML = data.contact.name;
       document.getElementById("Email-label").innerText = data.contact.email;

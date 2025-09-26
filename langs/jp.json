@@ -24,7 +24,7 @@
       "description": "革新的なニュースホームページを構築する中で、CSS Gridの複雑な技術を習得しました。",
       "year": "2023年",
       "tech": ["React", "HTML", "CSS", "API"],
-      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "image": "../assets/main_about.webp",
       "liveLink": "#",
       "githubLink": "#"
     },
@@ -33,14 +33,15 @@
       "description": "自身のプロジェクトとスキルを紹介するための個人ポートフォリオです。",
       "year": "2024年",
       "tech": ["HTML", "CSS", "JavaScript"],
-      "image": "./assets/WebDevelopmentProjects2.jpg",
+      "image": "../assets/main_about.webp",
       "liveLink": "#",
       "githubLink": "#"
     }
   ],
   "contact": {
     "heading": "お問い合わせ",
-    "emailText": "メールはこちら：<span>shashankinjapan@gmail.com</span><br>詳細は <span>履歴書</span> をご覧ください。",
+    "emailText": "メールはこちら：<a href='mailto:shashankinjapan@gmail.com?subject=こんにちは、あなたのポートフォリオを拝見しました '>shashankinjapan@gmail.com</a>",
+    "resumeText": "詳細は <a href='../assets/履歴書.pdf'>履歴書</a> をご覧ください。",
     "name": "お名前",
     "email": "メール",
     "subject": "件名",

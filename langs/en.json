@@ -40,7 +40,8 @@
   ],
   "contact": {
     "heading": "Let's Connect",
-    "emailText": "Say hello at <span>shashankinjapan@gmail.com</span> <br> For more info, here's my <span>resume</span>",
+    "emailText": "Say hello at <a href='mailto:shashankinjapan@gmail.com?subject=Hi%20,%20I%20Saw%20Your%20Portfolio '>shashankinjapan@gmail.com</a>",
+    "resumeText": "For more info, here's my <a href='../assets/Resume.pdf'>resume</a>",
     "name": "Name",
     "email": "Email",
     "subject": "Subject",
