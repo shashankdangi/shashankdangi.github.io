@@ -1,78 +1,131 @@
 {
-  "navigation": {
-    "about": "About",
-    "work": "Work",
-    "contact": "Contact"
-  },
-  "home": {
-    "introTop": "Hi, I am <br> Shashank.",
-    "introBottom": "A Osaka based front-end developer passionate about building accessible and user friendly websites.",
-    "contactMe": "Contact Me"
-  },
-  "about": {
-    "heading": "About Me",
-    "description": "I am a front-end developer based in Osaka looking for exciting opportunities. Has Software Development background. Likes to focus on accessibility when developing.",
-    "moreLink": "More About Me"
-  },
-  "projectsIntro": {
-    "intro": "Featured Projects",
-    "desc": "Here are some of the selected projects that showcase my passion for front-end development."
-  },
-  "projects": [
-    {
-      "title": "Rawg.io Clone",
-      "description": "Used Rawg.io API to create an Game Information App that also let you filter games based on genre , title , platform . also having dark and light mode and multi device responsiveness",
-      "year": "2023",
-      "tech": ["React", "TypeScript", "ChakraUI", "API"],
-      "image": "../assets/Rawg.webp",
-      "liveLink": "https://game-hub-nu-vert.vercel.app/",
-      "githubLink": "https://github.com/shashankdangi/Rawg-Clone"
+  "homePage": {
+    "navigation": {
+      "about": "About",
+      "work": "Work",
+      "contact": "Contact"
     },
-    {
-      "title": "Kanji Dictionary",
-      "description": "Created an Kanji Disctionary using Open API . it let you search the kanji and see its readings , strokes , all similar readings with sound and dark and light mode ",
-      "year": "2024",
-      "tech": ["Next.js", "TailwindCSS", "TypeScript", "ShadCn", "API"],
-      "image": "../assets/KanjiDis.webp",
-      "liveLink": "https://kanji-search.vercel.app/",
-      "githubLink": "https://github.com/shashankdangi/KanjiSearch"
+
+    "home": {
+      "introTop": "Hi, I am <br> Shashank.",
+      "introBottom": "A Osaka based front-end developer passionate about building accessible and user friendly websites.",
+      "contactMe": "Contact Me"
     },
-    {
-      "title": "QR Code Generator",
-      "description": "Create QR Code of any given URL ",
-      "year": "2023",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "image": "../assets/QRCode.webp",
-      "liveLink": "https://shashankdangi.github.io/QR-CodeGenerator/",
-      "githubLink": "https://github.com/shashankdangi/QR-CodeGenerator"
+    "about": {
+      "heading": "About Me",
+      "description": "I am a front-end developer based in Osaka looking for exciting opportunities. Has Software Development background. Likes to focus on accessibility when developing.",
+      "moreLink": "More About Me"
     },
-    {
-      "title": "PigGame",
-      "description": "Created a Two Player Complex Game . Score will Reset to 0 when dice gets 1 so when to switch is the tricky part. and the first to score 100 wins.",
-      "year": "2023",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "image": "../assets/PigGame.webp",
-      "liveLink": "https://shashankdangi.github.io/PigGame/",
-      "githubLink": "https://github.com/shashankdangi/PigGame"
+    "projectsIntro": {
+      "intro": "Featured Projects",
+      "desc": "Here are some of the selected projects that showcase my passion for front-end development."
     },
-    {
-      "title": "Guess My Number",
-      "description": "Created a Number Guessing game . Computer randomly takes a number and you have to guess it before you loose all your points . Computer gives you hint as if its too low or too high",
-      "year": "2024",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "image": "../assets/NumberGuess.webp",
-      "liveLink": "https://shashankdangi.github.io/GuessMyNumber/",
-      "githubLink": "https://github.com/shashankdangi/GuessMyNumber"
+    "projects": [
+      {
+        "title": "Rawg.io Clone",
+        "description": "Used Rawg.io API to create an Game Information App that also let you filter games based on genre , title , platform . also having dark and light mode and multi device responsiveness",
+        "year": "2023",
+        "tech": ["React", "TypeScript", "ChakraUI", "API"],
+        "image": "../assets/Rawg.webp",
+        "liveLink": "https://game-hub-nu-vert.vercel.app/",
+        "githubLink": "https://github.com/shashankdangi/Rawg-Clone"
+      },
+      {
+        "title": "Kanji Dictionary",
+        "description": "Created an Kanji Disctionary using Open API . it let you search the kanji and see its readings , strokes , all similar readings with sound and dark and light mode ",
+        "year": "2024",
+        "tech": ["Next.js", "TailwindCSS", "TypeScript", "ShadCn", "API"],
+        "image": "../assets/KanjiDis.webp",
+        "liveLink": "https://kanji-search.vercel.app/",
+        "githubLink": "https://github.com/shashankdangi/KanjiSearch"
+      },
+      {
+        "title": "QR Code Generator",
+        "description": "Create QR Code of any given URL ",
+        "year": "2023",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "image": "../assets/QRCode.webp",
+        "liveLink": "https://shashankdangi.github.io/QR-CodeGenerator/",
+        "githubLink": "https://github.com/shashankdangi/QR-CodeGenerator"
+      },
+      {
+        "title": "PigGame",
+        "description": "Created a Two Player Complex Game . Score will Reset to 0 when dice gets 1 so when to switch is the tricky part. and the first to score 100 wins.",
+        "year": "2023",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "image": "../assets/PigGame.webp",
+        "liveLink": "https://shashankdangi.github.io/PigGame/",
+        "githubLink": "https://github.com/shashankdangi/PigGame"
+      },
+      {
+        "title": "Guess My Number",
+        "description": "Created a Number Guessing game . Computer randomly takes a number and you have to guess it before you loose all your points . Computer gives you hint as if its too low or too high",
+        "year": "2024",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "image": "../assets/NumberGuess.webp",
+        "liveLink": "https://shashankdangi.github.io/GuessMyNumber/",
+        "githubLink": "https://github.com/shashankdangi/GuessMyNumber"
+      }
+    ],
+    "contact": {
+      "heading": "Let's Connect",
+      "emailText": "Say hello at <a href='mailto:shashankinjapan@gmail.com?subject=Hi%20,%20I%20Saw%20Your%20Portfolio '>shashankinjapan@gmail.com</a>",
+      "resumeText": "For more info, here's my <a href='../assets/Resume.pdf'>resume</a>",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit"
     }
-  ],
-  "contact": {
-    "heading": "Let's Connect",
-    "emailText": "Say hello at <a href='mailto:shashankinjapan@gmail.com?subject=Hi%20,%20I%20Saw%20Your%20Portfolio '>shashankinjapan@gmail.com</a>",
-    "resumeText": "For more info, here's my <a href='../assets/Resume.pdf'>resume</a>",
-    "name": "Name",
-    "email": "Email",
-    "subject": "Subject",
-    "message": "Message",
-    "submit": "Submit"
+  },
+  "aboutPage": {
+    "aboutNavigation": {
+      "skills": "Skills",
+      "education": "Education",
+      "contact": "Contact"
+    },
+    "main": {
+      "title": "about me",
+      "heading": "I am a front-end developer based in Osaka. Has Software Development Background.",
+      "desc": "I am a front-end developer based in Osaka looking for exciting opportunities. Has Software Development Background. Likes to focus on accessibility when developing. Passionate and Curious about solving problems. Currently, I'm exploring Reactjs, Nextjs and a bit of designing. While I am not programming . I enjoy listening to music or watching anime . Learning more to improve my skills.",
+      "downloadBtn": "Download resume"
+    },
+    "skill": {
+      "title": "my capabilities",
+      "desc": "I am always looking to add more skills and taking on challanges. These are some of the skills i currently have",
+      "skills": [
+        "Html",
+        "css",
+        "JavaScript",
+        "TypeScript",
+        "figma",
+        "react",
+        "next.js",
+        "PowerPoint"
+      ]
+    },
+    "education": {
+      "title": "my education",
+      "record": [
+        {
+          "title": "Japanese Language Studies",
+          "time": "Apr 2024 - Sep 2025",
+          "institute": "Human Academy Japanese Language School ",
+          "desc": "Studied Japanese for a Year and Half at Center of Osaka and obtained JLPT N2"
+        },
+        {
+          "title": "b.vov software development",
+          "time": "nov 2023 - Present",
+          "institute": "Delhi University",
+          "desc": "Studied B.Voc Software developemnt at delhi univeristy and score 86%"
+        },
+        {
+          "title": "class xii",
+          "time": "nov 2023 - Present",
+          "institute": "kcm world school",
+          "desc": "Studied B.Voc Software developemnt at delhi univeristy and score 86%"
+        }
+      ]
+    }
   }
 }

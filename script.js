@@ -23,45 +23,57 @@ function loadContent(lang) {
   fetch(`./langs/${lang}.json`)
     .then((res) => res.json())
     .then((data) => {
-      //! Navigation
-      const navLinks = document.querySelector(".nav-links");
-      navLinks.innerHTML = `
-      <li><a href='#About-Page'>${data.navigation.about}</a></li>
-      <li><a href='#Work-Page'>${data.navigation.work}</a></li>
-      <li><a href='#Contact-Page'>${data.navigation.contact}</a></li>
+      //! Check the currentPage
+      const HomePage = document.querySelector(".home");
+      const AboutPage = document.querySelector(".about-page");
+
+      //! Home Page Data
+
+      if (HomePage) {
+        //! Navigation
+        const navLinks = document.querySelector(".nav-links");
+
+        navLinks.innerHTML = `
+      <li><a href='#About-Page'>${data.homePage.navigation.about}</a></li>
+      <li><a href='#Work-Page'>${data.homePage.navigation.work}</a></li>
+      <li><a href='#Contact-Page'>${data.homePage.navigation.contact}</a></li>
     `;
-
-      // * Closes the nav when section is reached
-      const links = navLinks.querySelectorAll("a");
-      links.forEach((link) => {
-        link.addEventListener("click", () => {
-          navMenu.classList.remove("active"); // assumes navMenu is defined
+        // * Closes the nav when section is reached
+        const links = navLinks.querySelectorAll("a");
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            navMenu.classList.remove("active"); // assumes navMenu is defined
+          });
         });
-      });
 
-      //! Home
-      document.querySelector(".intro-top").innerHTML = data.home.introTop;
-      document.querySelector(".intro-bottom").innerHTML = data.home.introBottom;
-      document.querySelector(".contact-me-text").innerHTML =
-        data.home.contactMe;
+        //! Home
+        document.querySelector(".intro-top").innerHTML =
+          data.homePage.home.introTop;
+        document.querySelector(".intro-bottom").innerHTML =
+          data.homePage.home.introBottom;
+        document.querySelector(".contact-me-text").innerHTML =
+          data.homePage.home.contactMe;
 
-      //! About
-      document.getElementById("about-heading").innerText = data.about.heading;
-      document.getElementById("about-desc").innerText = data.about.description;
-      document.getElementById("about-more").innerText = data.about.moreLink;
+        //! About
+        document.getElementById("about-heading").innerText =
+          data.homePage.about.heading;
+        document.getElementById("about-desc").innerText =
+          data.homePage.about.description;
+        document.getElementById("about-more").innerText =
+          data.homePage.about.moreLink;
 
-      //! Projects
-      document.getElementById("projects-intro").innerText =
-        data.projectsIntro.intro;
-      document.getElementById("projects-desc").innerText =
-        data.projectsIntro.desc;
+        //! Projects
+        document.getElementById("projects-intro").innerText =
+          data.homePage.projectsIntro.intro;
+        document.getElementById("projects-desc").innerText =
+          data.homePage.projectsIntro.desc;
 
-      const projectContainer = document.querySelector(".project-cards");
-      projectContainer.innerHTML = ""; // clear previous
-      data.projects.forEach((project) => {
-        const card = document.createElement("div");
-        card.classList.add("project-card");
-        card.innerHTML = `
+        const projectContainer = document.querySelector(".project-cards");
+        projectContainer.innerHTML = ""; // clear previous
+        data.homePage.projects.forEach((project) => {
+          const card = document.createElement("div");
+          card.classList.add("project-card");
+          card.innerHTML = `
           <div class="project-img-container">
             <div class="project-img">
               <img src="${project.image}" alt="${project.title}" />
@@ -106,24 +118,109 @@ function loadContent(lang) {
             </div>
           </div>
         `;
-        projectContainer.appendChild(card);
+          projectContainer.appendChild(card);
+        });
+        //! Contact
+        document.getElementById("contact-heading").innerText =
+          data.homePage.contact.heading;
+        document.getElementById("contact-email").innerHTML =
+          data.homePage.contact.emailText;
+        document.getElementById("contact-resume").innerHTML =
+          data.homePage.contact.resumeText;
+
+        document.getElementById("Name-label").innerHTML =
+          data.homePage.contact.name;
+        document.getElementById("Email-label").innerText =
+          data.homePage.contact.email;
+        document.getElementById("Subject-label").innerText =
+          data.homePage.contact.subject;
+        document.getElementById("Message-label").innerText =
+          data.homePage.contact.message;
+
+        // Fixed: Just set the button text, don't create nested anchor
+        sendMail.innerText = data.homePage.contact.submit;
+      }
+
+      //!-----------------------AboutPage--------------------------------------------------------//
+      if (AboutPage) {
+        //?=====================Navigation=============
+        const aboutNavLinks = document.querySelector(".about-nav-links");
+        aboutNavLinks.innerHTML = `
+      <li><a href='#Skills-Page'>${data.aboutPage.aboutNavigation.skills}</a></li>
+      <li><a href='#Education-Page'>${data.aboutPage.aboutNavigation.education}</a></li>
+      <li><a href='#Contact-Page'>${data.aboutPage.aboutNavigation.contact}</a></li>
+    `;
+
+        // * Closes the nav when section is reached
+        const links = aboutNavLinks.querySelectorAll("a");
+        links.forEach((link) => {
+          link.addEventListener("click", () => {
+            navMenu.classList.remove("active"); // assumes navMenu is defined
+          });
+        });
+      }
+
+      //?========================About Main==============
+      document.getElementById("title").innerText = data.aboutPage.main.title;
+      document.getElementById("about-heading").innerText =
+        data.aboutPage.main.heading;
+      document.getElementById("about-description").innerText =
+        data.aboutPage.main.desc;
+      document.getElementById("download-resume").innerText =
+        data.aboutPage.main.downloadBtn;
+
+      //?========================Skills==================
+      document.getElementById("skills-title").innerText =
+        data.aboutPage.skill.title;
+      document.getElementById("skills-desc").innerText =
+        data.aboutPage.skill.desc;
+      document.getElementById("skills-tags").innerHTML =
+        data.aboutPage.skill.skills
+          .map((tag) => `<span class="skillTag">${tag}</span>`)
+          .join("");
+
+      //?=====================Education====================
+      document.getElementById("education-title").innerText =
+        data.aboutPage.education.title;
+      const educationContainer = document.querySelector(".education-cards");
+      educationContainer.innerHTML = "";
+      data.aboutPage.education.record.forEach((info) => {
+        const card = document.createElement("div");
+        card.classList.add("education-card");
+        card.innerHTML = `
+          <div class="education-headings">
+            <h3 id="education-heading">${info.title}</h3>
+            <p id="timePeriod">${info.time}</p>
+          </div>
+          <div class="education-from">
+            <p id="institute">${info.institute}</p>
+          </div>
+          <div class="education-details">
+            <p id="education-details">
+             ${info.desc}
+            </p>
+          </div>`;
+        educationContainer.append(card);
       });
-
-      //! Contact
+      //?==============================Contact=============================
       document.getElementById("contact-heading").innerText =
-        data.contact.heading;
+        data.homePage.contact.heading;
       document.getElementById("contact-email").innerHTML =
-        data.contact.emailText;
+        data.homePage.contact.emailText;
       document.getElementById("contact-resume").innerHTML =
-        data.contact.resumeText;
+        data.homePage.contact.resumeText;
 
-      document.getElementById("Name-label").innerHTML = data.contact.name;
-      document.getElementById("Email-label").innerText = data.contact.email;
-      document.getElementById("Subject-label").innerText = data.contact.subject;
-      document.getElementById("Message-label").innerText = data.contact.message;
+      document.getElementById("Name-label").innerHTML =
+        data.homePage.contact.name;
+      document.getElementById("Email-label").innerText =
+        data.homePage.contact.email;
+      document.getElementById("Subject-label").innerText =
+        data.homePage.contact.subject;
+      document.getElementById("Message-label").innerText =
+        data.homePage.contact.message;
 
       // Fixed: Just set the button text, don't create nested anchor
-      sendMail.innerText = data.contact.submit;
+      sendMail.innerText = data.homePage.contact.submit;
     })
     .catch((err) => console.error(err));
 }
