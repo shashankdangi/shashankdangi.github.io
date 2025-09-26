@@ -94,7 +94,7 @@ function loadContent(lang) {
               <div class="live-link">
                 <a href="${
                   project.liveLink
-                }">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                }" target="_blank">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
               </div>
               <div class="github-link">
                 <a href="${
