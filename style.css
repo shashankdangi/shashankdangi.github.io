@@ -67,7 +67,7 @@ html.lang-jp .intro .intro-text .intro-top {
   background: none;
   color: var(--primary-sub);
   border: none;
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: bold;
   background: var(--bg-shadow);
   padding: 8px;
@@ -290,11 +290,21 @@ hr {
 
 .about h1 {
   font-family: var(--primary-font);
-  font-size: 54px;
+  font-size: 5.5rem;
 }
 
 .about a {
-  font-size: 16px;
+  font-size: 1.5em;
+}
+
+#about-title {
+  display: none;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: inherit;
 }
 
 a {
@@ -319,7 +329,7 @@ a::after {
 }
 
 .about p {
-  font-size: 18px;
+  font-size: 1.8em;
   color: var(--primary-sub);
 }
 
@@ -344,7 +354,7 @@ a::after {
   background: var(--bg-shadow);
   padding: 2rem;
   border-radius: 2rem;
-  height: 200px;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -639,7 +649,7 @@ a::after {
 }
 
 .about-hero-img {
-  height: 50vh;
+  height: 40vh;
 }
 
 .about-hero-img img {
@@ -746,17 +756,298 @@ a::after {
   color: var(--primary-sub);
 }
 
-/*!------------------------------------------------  */
+/*!---------------------------------------------------------------------------------------------------------------------------------------  */
 
-/* ! Tablet View */
+/* !=================================================== Tablet View========================================================================= */
 @media (min-width: 601px) and (max-width: 1024px) {
   body {
-    font-size: 17px;
     padding: 1rem;
   }
+
+  /*todo=====================================HomePage Japanese Modification=================================  */
+  html.lang-jp .intro .intro-text .intro-top {
+    font-size: 3em;
+  }
+
+  html.lang-jp #about-title {
+    font-size: 2em;
+  }
+
+  html.lang-jp .about p {
+    font-size: 1.7em;
+  }
+
+  html.lang-jp .about a {
+    font-size: 1.3em;
+  }
+  html.lang-jp .intro .intro-text .intro-bottom {
+    font-size: 1.3em;
+  }
+
+  html.lang-jp .about h1,
+  html.lang-jp .projects h1 {
+    font-size: 3em;
+  }
+  html.lang-jp .projects p {
+    font-size: 1.4em;
+  }
+  /*todo===================================== Japanese Modification END ====================================  */
+  .container {
+    margin: 3em 1em;
+  }
+
+  #Home {
+    align-items: center;
+  }
+
+  .intro-text {
+    gap: unset;
+  }
+
+  .intro .intro-text .intro-top {
+    font-size: 6rem;
+  }
+  .intro .intro-text .intro-bottom {
+    font-size: 1.4rem;
+  }
+  img {
+    max-width: 600px;
+    border-radius: 1rem;
+  }
+  .mobile-nav i {
+    display: none;
+  }
+
+  .links {
+    right: 0;
+    background: none;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: unset;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  .links i {
+    display: none;
+    top: 0;
+  }
+
+  .links ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .links ul li a {
+    color: var(--primary-sub);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  .navigation {
+    width: unset;
+  }
+
+  #Home {
+    flex-direction: row;
+  }
+
+  #About {
+    margin-bottom: 10vh;
+  }
+  .about {
+    flex-direction: row;
+    gap: 10em;
+    align-items: flex-start;
+  }
+
+  .about h1 {
+    font-size: 6em;
+  }
+
+  #about-title {
+    display: unset;
+    font-size: 1.7em;
+  }
+
+  .about-image {
+    display: none;
+  }
+
+  .about p {
+    font-size: 1.3em;
+  }
+
+  .about a {
+    font-size: 1.3em;
+    margin-top: 1rem;
+  }
+  .about-info {
+    gap: 0.5em;
+  }
+
+  .about h1 {
+    white-space: nowrap;
+  }
+
+  /* Projects */
+  #Projects {
+    margin-bottom: 70px;
+  }
+  .projects h1 {
+    font-size: 5em;
+  }
+
+  .projects p {
+    font-size: 1.5em;
+  }
+
+  .project-img-container {
+    justify-content: center;
+  }
+
+  #Contact {
+    flex-direction: row;
+    width: unset;
+    justify-content: space-between;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 50vw;
+  }
+  .intro-img {
+    margin-top: 0;
+  }
+
+  /* ?===========================About Page Tablet =================================== */
+
+  #AboutPage {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+  }
+  /*todo================== AboutPage Japanese Modifications===================================  */
+  html.lang-jp .title h1 {
+    font-size: 4em;
+  }
+
+  html.lang-jp .about-heading p {
+    font-size: 1.6em;
+  }
+
+  html.lang-jp .skills-title h1 {
+    font-size: 3em;
+  }
+  html.lang-jp .education-title h1 {
+    font-size: 4em;
+  }
+
+  html.lang-jp #Skills {
+    gap: unset;
+  }
+
+  html.lang-jp .details-top h1 {
+    white-space: nowrap;
+    font-size: 4em;
+  }
+
+  /*todo===================Japanese END============================================  */
+  .about-container {
+    flex-direction: row;
+    gap: 8rem;
+    align-items: flex-start;
+  }
+
+  .about-hero-img img {
+    max-width: unset;
+    width: 100%;
+    border-radius: 1em;
+  }
+
+  .about-hero-img {
+    height: 30vh;
+    max-height: 600px;
+  }
+
+  .about-heading p {
+    font-size: 2em;
+  }
+
+  .about-description p {
+    font-size: 1.3em;
+    margin-top: unset;
+  }
+
+  .title h1 {
+    font-size: 6em;
+    white-space: nowrap;
+  }
+
+  .about-links {
+    margin-top: 2rem;
+    margin-bottom: unset;
+  }
+
+  /*? Skills   */
+  #Skills {
+    /* flex-direction: unset; */
+    gap: 2rem;
+  }
+
+  .skills-title h1 {
+    font-size: 5em;
+    white-space: nowrap;
+  }
+  .skills-desc p {
+    font-size: 1.3em;
+  }
+  .skillTag {
+    font-size: 1em;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+
+  /* ? Education */
+  #Education {
+    flex-direction: unset;
+    gap: 12rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .education-title h1 {
+    font-size: 5em;
+    white-space: nowrap;
+  }
+
+  .education-cards {
+    gap: 2rem;
+  }
+
+  .education-headings h3 {
+    font-size: 1.5em;
+  }
+
+  .education-headings p,
+  .education-from p,
+  .education-details p {
+    font-size: 1.3em;
+  }
+
+  /* !======================================================= Tablet View END================================================================ */
 }
 
-/* ! Desktop View */
+/* !================================================== Desktop View =========================================================================*/
 @media (min-width: 1025px) {
   body {
     font-size: 18px;

@@ -63,6 +63,8 @@ function loadContent(lang) {
           data.homePage.about.description;
         document.getElementById("about-more").innerText =
           data.homePage.about.moreLink;
+        document.getElementById("about-title").innerText =
+          data.homePage.about.title;
 
         //! Projects
         document.getElementById("projects-intro").innerText =

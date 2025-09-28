@@ -17,20 +17,22 @@
     <!--! Navigation -->
     <header class="navigation">
       <div class="logo"><span>Shashank</span></div>
-      <div class="mobile-nav">
-        <button class="lang-toggle"></button>
-        <button class="nav-toggle" aria-label="Open navigation" id="nav-btn">
-          <i class="fa-solid fa-bars" id="nav-icon"></i>
-        </button>
+      <div class="nav-right">
+        <div class="mobile-nav">
+          <button class="lang-toggle"></button>
+          <button class="nav-toggle" aria-label="Open navigation" id="nav-btn">
+            <i class="fa-solid fa-bars" id="nav-icon"></i>
+          </button>
+        </div>
+        <nav class="links">
+          <button class="close-btn" aria-label="Close navigation">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="nav-links">
+            <!-- Injected through JavaScript -->
+          </ul>
+        </nav>
       </div>
-      <nav class="links">
-        <button class="close-btn" aria-label="Close navigation">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <ul class="nav-links">
-          <!-- Injected through JavaScript -->
-        </ul>
-      </nav>
     </header>
 
     <!-- !Main Home -->
@@ -68,8 +70,11 @@
     <section class="container" id="About">
       <div class="about">
         <h1 id="about-heading"></h1>
-        <p id="about-desc"></p>
-        <div><a href="About.html" id="about-more"></a></div>
+        <div class="about-info">
+          <h3 id="about-title"></h3>
+          <p id="about-desc"></p>
+          <div><a href="About.html" id="about-more"></a></div>
+        </div>
       </div>
       <div class="about-image">
         <img src="./assets/about_mobile.webp" alt="about-me" />
