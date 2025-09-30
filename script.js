@@ -16,7 +16,7 @@ function setLanguageClass(lang) {
 }
 
 //!=========================== default lang ========================================
-let currentLang = "en";
+let currentLang = "jp";
 //!=================================================================================
 
 let sendMail = document.getElementById("Submit-btn");
