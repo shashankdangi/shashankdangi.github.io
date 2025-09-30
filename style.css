@@ -529,7 +529,7 @@ a::after {
   height: 40px;
   color: white;
   padding: 0.3em;
-  border-radius: 7px;
+  border-radius: 3px;
   padding-left: 1em;
   font-size: 18px;
 }
@@ -1053,4 +1053,251 @@ a::after {
     font-size: 18px;
     padding: 2rem;
   }
+
+  .mobile-nav i {
+    display: none;
+  }
+
+  .links {
+    right: 0;
+    background: none;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: unset;
+    align-items: unset;
+    justify-content: unset;
+  }
+
+  .links i {
+    display: none;
+    top: 0;
+  }
+
+  .links ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .links ul li a {
+    color: var(--primary-sub);
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  .navigation {
+    width: unset;
+  }
+
+  .lang-toggle {
+    font-size: 14px;
+  }
+
+  /**======================HOME==========  */
+  #Home {
+    flex-direction: unset;
+    align-items: center;
+  }
+  img {
+    max-width: 600px;
+    border-radius: 1rem;
+  }
+
+  .intro .intro-text .intro-top {
+    font-size: 105px;
+  }
+
+  /**==============HOME END==============  */
+  /**=============== ABOUT ================  */
+  #About {
+    flex-direction: unset;
+    height: 40vh;
+  }
+  .about-image {
+    display: none;
+  }
+  .about {
+    flex-direction: unset;
+    gap: 10em;
+    justify-content: space-between;
+  }
+
+  .about h1 {
+    font-size: 101px;
+    white-space: nowrap;
+  }
+
+  #about-title {
+    display: unset;
+    font-size: 32px;
+    text-transform: capitalize;
+  }
+  .about-info {
+    gap: 0.6rem;
+  }
+  .about p {
+    font-size: 20px;
+  }
+  .about a {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 3rem 8rem;
+  }
+  .about-info {
+    gap: 1.4rem;
+  }
+  /**=============== ABOUT END ============  */
+
+  /**=============== PROJECTS =============  */
+  .projects h1 {
+    font-size: 76px;
+  }
+  .projects p {
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .project-card {
+    flex-direction: unset;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .project-img img {
+    width: 600px;
+  }
+  .project-about {
+    width: 50%;
+  }
+  .project-img-container {
+    padding: 5rem 2rem;
+  }
+  .project-title p {
+    text-transform: capitalize;
+  }
+  /**=============== PROJECT END ==========  */
+
+  /**=============== CONTACT ==============  */
+  #Contact {
+    flex-direction: row;
+    width: unset;
+    justify-content: space-between;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 50vw;
+  }
+  .details-top h1 {
+    font-size: 90px;
+    white-space: nowrap;
+  }
+
+  html.lang-jp .intro .intro-text .intro-top {
+    font-size: 70px;
+    white-space: nowrap;
+  }
+  html.lang-jp .about h1 {
+    font-size: 50px;
+  }
+
+  html.lang-jp #about-title {
+    font-size: 25px;
+  }
+  html.lang-jp .projects h1 {
+    font-size: 50px;
+  }
+
+  html.lang-jp .details-top h1 {
+    white-space: nowrap;
+  }
+  /**=============== CONTACT END ==========  */
+  /*todo============ ABOUT PAGE ===========  */
+
+  /** ABOUT MAIN  */
+  .title h1 {
+    font-size: 101px;
+    white-space: nowrap;
+  }
+  .about-container {
+    flex-direction: unset;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+  .about-info {
+    width: 60%;
+  }
+  .about-heading p {
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  .about-description p {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .about-hero-img {
+    height: 70vh;
+  }
+  .about-hero-img img {
+    max-width: unset;
+  }
+  /**-----------  */
+
+  .skills-title h1 {
+    font-size: 76px;
+    white-space: nowrap;
+  }
+  .skills-desc p {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .skills-tags {
+    margin-top: 2rem;
+  }
+  #Skills {
+    gap: 10rem;
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+
+  #Education {
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+  .education-title h1 {
+    font-size: 76px;
+  }
+  .education-cards {
+    gap: 3rem;
+    width: 60%;
+  }
+  .skills-info {
+    width: 60%;
+  }
+
+  html.lang-jp .title h1 {
+    font-size: 60px;
+    white-space: nowrap;
+  }
+  html.lang-jp .skills-title h1,
+  html.lang-jp .education-title h1 {
+    font-size: 50px;
+  }
+
+  html.lang-jp .details-top h1 {
+    font-size: 70px;
+  }
+  html.lang-jp .intro .intro-text .intro-bottom {
+    width: 80%;
+  }
+
+  /*?==============================END==================  */
 }
