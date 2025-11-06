@@ -23,6 +23,32 @@
     },
     "projects": [
       {
+        "title": "Rirekisho Builder",
+        "description": "Created a Resume Building Website where user can create a Japanese Style Resume by Filling out his information and can download the resume ",
+        "year": "2025",
+        "tech": ["React", "Next.js", "TypeScript", "TailwindCSS", "ShadCn"],
+        "image": "../assets/Rirekisho.webp",
+        "liveLink": "https://resume-builder-woad-six.vercel.app/",
+        "githubLink": "https://github.com/shashankdangi/Resume-Builder"
+      },
+      {
+        "title": "BitPort",
+        "description": "Created a URL Shortning Website where you can create a short link from a long url to share and save your links by creating account",
+        "year": "2025",
+        "tech": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "ShadCn",
+          "BetterAuth"
+        ],
+        "image": "../assets/BitPort.webp",
+        "liveLink": "https://bit-port.vercel.app/",
+        "githubLink": "https://github.com/shashankdangi/BitPort"
+      },
+
+      {
         "title": "Rawg.io Clone",
         "description": "Used Rawg.io API to create an Game Information App that also let you filter games based on genre , title , platform . also having dark and light mode and multi device responsiveness",
         "year": "2023",
@@ -39,33 +65,6 @@
         "image": "../assets/KanjiDis.webp",
         "liveLink": "https://kanji-search.vercel.app/",
         "githubLink": "https://github.com/shashankdangi/KanjiSearch"
-      },
-      {
-        "title": "QR Code Generator",
-        "description": "Create QR Code of any given URL ",
-        "year": "2023",
-        "tech": ["HTML", "CSS", "JavaScript"],
-        "image": "../assets/QRCode.webp",
-        "liveLink": "https://shashankdangi.github.io/QR-CodeGenerator/",
-        "githubLink": "https://github.com/shashankdangi/QR-CodeGenerator"
-      },
-      {
-        "title": "PigGame",
-        "description": "Created a Two Player Complex Game . Score will Reset to 0 when dice gets 1 so when to switch is the tricky part. and the first to score 100 wins.",
-        "year": "2023",
-        "tech": ["HTML", "CSS", "JavaScript"],
-        "image": "../assets/PigGame.webp",
-        "liveLink": "https://shashankdangi.github.io/PigGame/",
-        "githubLink": "https://github.com/shashankdangi/PigGame"
-      },
-      {
-        "title": "Guess My Number",
-        "description": "Created a Number Guessing game . Computer randomly takes a number and you have to guess it before you loose all your points . Computer gives you hint as if its too low or too high",
-        "year": "2024",
-        "tech": ["HTML", "CSS", "JavaScript"],
-        "image": "../assets/NumberGuess.webp",
-        "liveLink": "https://shashankdangi.github.io/GuessMyNumber/",
-        "githubLink": "https://github.com/shashankdangi/GuessMyNumber"
       }
     ],
     "contact": {

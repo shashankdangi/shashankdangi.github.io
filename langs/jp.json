@@ -33,6 +33,32 @@
     },
     "projects": [
       {
+        "title": "履歴書ビルダー",
+        "description": "ユーザーが自身の情報を入力することで、日本式の履歴書を作成し、ダウンロードできるウェブサイトを開発しました。",
+        "year": "2025",
+        "tech": ["React", "Next.js", "TypeScript", "TailwindCSS", "ShadCn"],
+        "image": "../assets/Rirekisho.webp",
+        "liveLink": "https://resume-builder-woad-six.vercel.app/",
+        "githubLink": "https://github.com/shashankdangi/Resume-Builder"
+      },
+      {
+        "title": "BitPort",
+        "description": "長いURLを短縮して共有・保存できるURL短縮サービスを開発しました。アカウントを作成することでリンクを管理することも可能です。",
+        "year": "2025",
+        "tech": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "ShadCn",
+          "BetterAuth"
+        ],
+        "image": "../assets/BitPort.webp",
+        "liveLink": "https://bit-port.vercel.app/",
+        "githubLink": "https://github.com/shashankdangi/BitPort"
+      },
+
+      {
         "title": "ゲーム情報",
         "description": "RawgAPIを利用して最新のゲームや人気ゲームの情報を検索できます。タイトル、ジャンル、リリース日、評価などを一覧で表示し、ユーザーが気になるゲームを簡単に探せるようにしました。またUIにはダークモードとライトモードも搭載しています。",
         "year": "2023",
@@ -49,33 +75,6 @@
         "image": "../assets/KanjiDis.webp",
         "liveLink": "https://kanji-search.vercel.app/",
         "githubLink": "https://github.com/shashankdangi/KanjiSearch"
-      },
-      {
-        "title": "QRコード",
-        "description": "テキストやURLを入力してQRコードを作成できます。",
-        "year": "2023",
-        "tech": ["HTML", "CSS", "JavaScript"],
-        "image": "../assets/QRCode.webp",
-        "liveLink": "https://shashankdangi.github.io/QR-CodeGenerator/",
-        "githubLink": "https://github.com/shashankdangi/QR-CodeGenerator"
-      },
-      {
-        "title": "PigGame",
-        "description": "2人でプレイでき、順番にサイコロを振って得点を競います。1が出るとターンの得点がリセットされるため、どこで止めるかの判断がポイントになります。JavaScriptを使って実装しました。",
-        "year": "2023",
-        "tech": ["HTML", "CSS", "JavaScript"],
-        "image": "../assets/PigGame.webp",
-        "liveLink": "https://shashankdangi.github.io/PigGame/",
-        "githubLink": "https://github.com/shashankdangi/PigGame"
-      },
-      {
-        "title": "数字当てゲーム",
-        "description": "ランダムに選ばれた数字をプレイヤーが推測し、入力した数値が大きいか小さいかのヒントが表示されます。正解するとスコアが表示され、最高記録を更新することもできます。JavaScriptで実装しました。",
-        "year": "2024",
-        "tech": ["HTML", "CSS", "JavaScript"],
-        "image": "../assets/NumberGuess.webp",
-        "liveLink": "https://shashankdangi.github.io/GuessMyNumber/",
-        "githubLink": "https://github.com/shashankdangi/GuessMyNumber"
       }
     ],
     "contact": {
